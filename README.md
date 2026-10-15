@@ -7,7 +7,7 @@ blend over the two image predictions, gestational age at scan and cervical
 length. Trained and evaluated under five-fold, cyclical
 cross-validation on the paper's cohort of 190 scans from 120 pregnancies.
 
-> Paper reference: [placeholder — citation to be added on publication].
+> Paper reference: [placeholder — to be added on publication].
 
 ## Installation
 
