@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+type: software
+title: PUUMA-CuB
+version: 1.0.0
+authors:
+  - family-names: Fajardo-Rojas
+    given-names: Diego
+license: Apache-2.0
+repository-code: https://github.com/<USERNAME>/puuma-cub
+doi: 10.5281/zenodo.XXXXXXX  # replace after the Zenodo release
+date-released: "YYYY-MM-DD"
+preferred-citation:
+  # Remaining fields (title as published, DOI, volume, pages) are filled on
+  # acceptance; the README's paper reference is still a placeholder.
+  type: article
+  authors:
+    - family-names: Fajardo-Rojas
+      given-names: Diego
+  title: "[placeholder — citation to be added on publication]"
+  journal: Medical Image Analysis
+  year: 2026

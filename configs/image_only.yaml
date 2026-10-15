@@ -1,0 +1,12 @@
+# Removes the CL input. 
+name: image_only
+tier: primary
+removes: CL input
+question: What imaging does alone
+dataset: Dataset001_PlacentaBrainCL
+backbone: umamba
+blend_inputs: [global_regression, local_regression, ga_scan]
+decoder_out_channels: 3
+label_map: {background: 0, placenta: 1, brain: 2}
+balanced_sampler: true
+implemented: true

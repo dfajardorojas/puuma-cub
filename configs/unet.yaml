@@ -1,0 +1,13 @@
+# Removes the U-Mamba backbone. MONAI UNet at nnU-Net's own pooling, no local
+# branch, deep supervision by hooks.
+name: unet
+tier: secondary
+removes: the U-Mamba backbone
+question: External architecture baseline
+dataset: Dataset001_PlacentaBrainCL
+backbone: monai_unet
+blend_inputs: [global_regression, ga_scan, cl]
+decoder_out_channels: 3
+label_map: {background: 0, placenta: 1, brain: 2}
+balanced_sampler: true
+implemented: true

@@ -1,0 +1,12 @@
+# Removes category-balanced sampling. 
+name: no_sampler
+tier: exploratory
+removes: balanced sampling
+question: Sampler contribution
+dataset: Dataset001_PlacentaBrainCL
+backbone: umamba
+blend_inputs: [global_regression, local_regression, ga_scan, cl]
+decoder_out_channels: 3
+label_map: {background: 0, placenta: 1, brain: 2}
+balanced_sampler: false
+implemented: true

@@ -1,0 +1,15 @@
+*.pth
+*.pt
+data/nnUNet_raw/
+data/nnUNet_preprocessed/*/*
+!data/nnUNet_preprocessed/*/nnUNetPlans.json
+outputs/
+cohort/
+*.csv
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+*.nii
+*.nii.gz
+.DS_Store

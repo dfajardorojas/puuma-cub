@@ -1,0 +1,5 @@
+This software builds on U-Mamba
+(Apache License 2.0, https://github.com/bowang-lab/U-Mamba), which vendors
+nnU-Net v2.1.1 (Apache License 2.0, https://github.com/MIC-DKFZ/nnUNet).
+src/puuma/noskip_decoder.py is a modified copy of U-Mamba's
+nnunetv2/nets/UMambaEnc_3d.py (lines 307-395, the UNetResDecoder class).

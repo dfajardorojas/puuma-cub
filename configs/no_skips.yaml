@@ -1,0 +1,14 @@
+# The reference model with the global decoder's skip connections removed, so every
+# bit of segmentation signal must pass through the bottleneck the regression
+# head reads. 
+name: no_skips
+tier: exploratory
+removes: the global-branch decoder's skip connections
+question: Must segmentation information pass through the bottleneck the regression reads?
+dataset: Dataset001_PlacentaBrainCL
+backbone: umamba_noskip
+blend_inputs: [global_regression, local_regression, ga_scan, cl]
+decoder_out_channels: 3
+label_map: {background: 0, placenta: 1, brain: 2}
+balanced_sampler: true
+implemented: true

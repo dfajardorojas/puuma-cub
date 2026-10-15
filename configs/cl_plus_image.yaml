@@ -1,0 +1,12 @@
+# The reference model. Every other row is this with one thing removed.
+name: cl_plus_image
+tier: primary
+removes: null
+question: THE REFERENCE MODEL
+dataset: Dataset001_PlacentaBrainCL
+backbone: umamba
+blend_inputs: [global_regression, local_regression, ga_scan, cl]
+decoder_out_channels: 3
+label_map: {background: 0, placenta: 1, brain: 2}
+balanced_sampler: true
+implemented: true

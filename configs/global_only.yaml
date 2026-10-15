@@ -1,0 +1,13 @@
+# Removes the local branch — the 20 cubed placental patch, its encoder and its
+# regression head.
+name: global_only
+tier: exploratory
+removes: the local branch (20^3 placental patch, encoder and regression head)
+question: All local information
+dataset: Dataset001_PlacentaBrainCL
+backbone: umamba
+blend_inputs: [global_regression, ga_scan, cl]
+decoder_out_channels: 3
+label_map: {background: 0, placenta: 1, brain: 2}
+balanced_sampler: true
+implemented: true

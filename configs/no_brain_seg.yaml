@@ -1,0 +1,13 @@
+# The no_brain_seg row.  Same case identifiers, so cohort.csv and
+# splits_final.json apply unchanged.
+name: no_brain_seg
+tier: secondary
+removes: brain segmentation channel
+question: "= Pippi's PUUMA + CL"
+dataset: Dataset002_PlacentaCL
+backbone: umamba
+blend_inputs: [global_regression, local_regression, ga_scan, cl]
+decoder_out_channels: 2
+label_map: {background: 0, placenta: 1}
+balanced_sampler: true
+implemented: true
